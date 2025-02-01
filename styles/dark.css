@@ -5,8 +5,13 @@
 */
 
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --bg-color: #000028;
+  --text-color: #F1B2CE;
+  --button-color: #FF0070;
+  --tytle-color_1: #DB00FF;
+  --shadow: #FF0070;
+  --tytle-color_2: #FF0070;
+  --tytle-color_3: #000028;
+  --bg-color-tytle: #FF0070;
+  --image: url(../images/cover-image-dark.png);
 }
