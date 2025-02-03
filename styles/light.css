@@ -16,6 +16,8 @@
   --image: url(../images/cover-image-light.png);
 }
 
+
+
 @media (prefers-color-scheme: light) {
   .page {
     --bg-color: #FFF1F7;
@@ -28,8 +30,13 @@
     --bg-color-tytle: #FF8DCB;
     --image: url(../images/cover-image-light.png);
     }
-  .header__label {
+
+  .page.theme_auto .header__label {
     display: none !important;
   }
+
 }
 
+.page.theme_light .header__label {
+  display: none !important;
+}
