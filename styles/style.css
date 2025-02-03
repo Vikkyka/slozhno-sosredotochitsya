@@ -164,6 +164,8 @@ h1 {
     flex-direction: column;
     justify-content: space-around;
     min-height: 98px;
+    gap: 10px;
+    margin-right: 5px;
   }
 }
 
@@ -174,18 +176,21 @@ h1 {
   }
   h1 {
     font-size: 120px;
-    line-height: 99px;
+    line-height: 95.7px;
+    margin-left: 8px;
+    letter-spacing: -2px;
   }
   .header__theme-menu {
     margin-left: auto;
-    margin-right: 10px;
-    align-self: center
+    margin-right: 18px;
+    align-self: center;
+    margin-top: 7px;
   }
   
   .header__theme-menu-list {
     flex-direction: column;
     justify-content: space-around;
-    min-height: 98px;
+    gap: 10px;
   }
   .header::after {
     top: 10px;
@@ -295,6 +300,10 @@ h4 {
   .content_2__paragraph_3 {
     grid-column: auto;
     grid-row: auto;
+  }
+
+  .content_2_tytle {
+    max-width: calc(100% / 4);
   }
 }
 
