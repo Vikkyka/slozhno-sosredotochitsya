@@ -96,7 +96,7 @@ a:focus-visible {
 
 .header__theme-menu-list {
   display: flex;
-  gap: 25px;
+  gap: 13px;
 }
 
 button {
@@ -124,8 +124,16 @@ button:focus-visible {
   border-bottom: 1px solid var(--button-color);
 }
 
+.header__theme-menu-item {
+  height: 26px;
+  width: 70px;
+  text-align: center;
+}
+
 .header__theme-menu-button_active {
   outline: 1px solid var(--button-color, white);
+  height: 26px;
+  width: 70px;
   pointer-events: none;
 }
 
@@ -266,9 +274,8 @@ button:focus-visible {
   text-shadow: 2px 2px 0 var(--shadow, black);
 }
 
-@media (668px <= width < 768px) {
+@media (668px <= width <= 768px) {
   .header {
-    /* min-height: 1024px; */
     grid-template-rows: 45.20% 25.60% 29.1%;
   }
   .header__theme-menu {
@@ -279,7 +286,6 @@ button:focus-visible {
   .header__theme-menu-list {
     flex-direction: column;
     justify-content: space-around;
-    /* min-height: 98px; */
     gap: 10px;
     margin-right: 5px;
   }
@@ -289,19 +295,21 @@ button:focus-visible {
   }
   .column {
     grid-template-columns: 1fr;
+    gap: 29px;
   }
-  .column_tytle {
+  .column_gros_tytle {
     max-width: calc(100% / 4);
   }
-  .column_tytle,
+  .column_tytle{
+    grid-column: auto;
+    grid-row: auto;
+  }
   .column__multitasking,
   .column__meal,
   .column__gadget {
     grid-column: auto;
     grid-row: auto;
-  }
-  .footer {
-    /* min-height: 1024px; */
+    margin-top: -8px;
   }
   .footer_text {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -311,7 +319,6 @@ button:focus-visible {
 
 @media (max-width: 668px) {
   .header {
-    /* min-height: 668px; */
     grid-template-rows: 35.60% 36.98% 27.4%;
   }
   .decor::after {
@@ -324,7 +331,7 @@ button:focus-visible {
   }
   .header__theme-menu {
     margin-left: auto;
-    margin-right: 18px;
+    margin-right: 10px;
     align-self: center;
     margin-top: 7px;
   }
@@ -388,7 +395,6 @@ button:focus-visible {
     grid-row: auto;
   }
   .footer {
-    /* min-height: 668px; */
     margin-top: 40px;
   }
   .footer_text {
