@@ -8,10 +8,11 @@
   --bg-color: #000028;
   --text-color: #F1B2CE;
   --button-color: #FF0070;
-  --tytle-color_1: #DB00FF;
+  --button-color-hover: #FF007066;
+  --tytle-color: #DB00FF;
   --shadow: #FF0070;
-  --tytle-color_2: #FF0070;
-  --tytle-color_3: #000028;
+  --section-tytle-color: #FF0070;
+  --paragraph-tytle-color: #000028;
   --bg-color-tytle: #FF0070;
   --image: url(../images/cover-image-dark.png);
 }
